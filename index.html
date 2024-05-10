@@ -187,15 +187,17 @@
                 right: 10px;
                 transform: translateY(-50%);
             }
+
             .responsive-h1 {
                 font-family: Freeman, system-ui;
-                font-size:8ch; 
-                color:rgb(192, 65, 255);
+                font-size: 8ch;
+                color: rgb(192, 65, 255);
             }
+
             .responsive-head1 {
                 font-family: Freeman, system-ui;
-                font-size:2ch; 
-                color:white;
+                font-size: 2ch;
+                color: white;
             }
 
             .portfolio-item {
@@ -203,20 +205,30 @@
                 height: auto;
             }
 
+            .portfolio-item .overlay {
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+
+            .portfolio-item.active .overlay {
+                opacity: 1;
+            }
+
             h1 {
                 font-size: 6rem;
             }
         }
+
         .responsive-h1 {
             font-family: Freeman, system-ui;
-            font-size:10ch; 
-            color:rgb(192, 65, 255);
+            font-size: 10ch;
+            color: rgb(192, 65, 255);
         }
 
         .responsive-head1 {
             font-family: Freeman, system-ui;
-            font-size:3ch; 
-            color:white;
+            font-size: 3ch;
+            color: white;
         }
 
         @media (max-width: 480px) {
@@ -226,19 +238,30 @@
                 left: 5px;
                 right: 5px;
             }
+
             .responsive-h1 {
                 font-family: Freeman, system-ui;
-                font-size:5ch; 
-                color:rgb(192, 65, 255);
+                font-size: 5ch;
+                color: rgb(192, 65, 255);
             }
+
             .responsive-head1 {
                 font-family: Freeman, system-ui;
-                font-size:2ch; 
-                color:white;
+                font-size: 2ch;
+                color: white;
             }
 
             .icons a {
                 margin: 0 5px;
+            }
+
+            .portfolio-item .overlay {
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+
+            .portfolio-item.active .overlay {
+                opacity: 1;
             }
 
             h1 {
@@ -258,7 +281,8 @@
     <div class="left-text">
         <h2 class="responsive-head1" style="font-family: Reddit Sans, sans-serif; margin:0;">Hello, my name is</h2>
         <h1 class="responsive-h1">Kendall Tart</h1>
-        <h2 class="responsive-head1" style="font-family: Reddit Sans, sans-serif; margin:0">I'm a software developer student who is passionate
+        <h2 class="responsive-head1" style="font-family: Reddit Sans, sans-serif; margin:0">I'm a software developer
+            student who is passionate
             about designing and building full-stack applications, along with engaging in various creative projects.</h2>
         <div style="padding-top: 5%;" class="icons">
             <a href="https://github.com/thekendalia" target="_blank"><i class="fa fa-github"></i></a>
@@ -284,21 +308,18 @@
                 <img src="static/SVG/javascript_1.svg" alt="Javascript" />
                 <img src="static/SVG/aws.svg" alt="AWS" />
             </div>
-            <div class="portfolio-item">
-                <img src="static/images/Rose.gif" alt="Project 1">
+            <div class="portfolio-item" onclick="toggleOverlay(this)">
+                <img src="static/images/Rose.gif" alt="Project 1" height="387" width="800">
                 <div class="overlay">
-                    <div style="font-family: Freeman, system-ui;" class="text">Make a custom website for your clash of
-                        clans
-                        clan<br><br>
-
+                    <div style="font-family: Freeman, system-ui;" class="text">
+                        Make a custom website for your clash of clans clan<br><br>
                         - Members can register for CWL or clan war<br>
                         - Display clan stats, and warlog<br>
                         - Database to keep track of members when they opt-in/opt-out<br>
                         - Uses Clash of Clans API to track and display clan data like clan member count, warlog... etc
                     </div>
                     <div style="padding-top: 1%;" class="icons">
-                        <a href="https://github.com/thekendalia/Clash-of-Clans-custom-website" target="_blank"><i
-                                class="fa fa-github"></i></a>
+                        <a href="https://github.com/thekendalia/Clash-of-Clans-custom-website" target="_blank"><i class="fa fa-github"></i></a>
                         <a href="https://darkroseclan.com/" target="_blank"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
@@ -315,7 +336,7 @@
                 <img src="static/SVG/openai.svg" alt="OpenAI" />
                 <img src="static/SVG/googleauth.svg" alt="Google Oauth" />
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" onclick="toggleOverlay(this)">
                 <img src="static/images/RateCourse.png" alt="Project 2" height="387" width="800">
                 <div class="overlay">
                     <div style="font-family: Freeman, system-ui;" class="text">An app for rating University courses at
@@ -338,13 +359,14 @@
                 <img src="static/SVG/css3.svg" alt="CSS" />
                 <img src="static/SVG/javascript_1.svg" alt="Javascript" />
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" onclick="toggleOverlay(this)">
                 <img src="static/images/KendallTart.gif" alt="Project 3" height="387" width="800">
                 <div class="overlay">
                     <div style="font-family: Freeman, system-ui;" class="text">Personal Porfolio<br><br>
                         - Building the resume website you're currently viewing</div>
                     <div style="padding-top: 1%;" class="icons">
-                        <a href="https://github.com/thekendalia/Personal-Portfolio" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://github.com/thekendalia/Personal-Portfolio" target="_blank"><i
+                                class="fa fa-github"></i></a>
                         <a href="" target="_blank"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
@@ -355,7 +377,7 @@
                 <img src="static/SVG/rust.svg" alt="Rust" />
                 <img src="static/SVG/openai.svg" alt="OpenAI" />
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" onclick="toggleOverlay(this)">
                 <img src="static/images/WeatherRust.jpg" alt="Project 3" height="387" width="800">
                 <div class="overlay">
                     <div style="font-family: Freeman, system-ui;" class="text">Discord Weather Bot<br><br>
@@ -380,6 +402,9 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        function toggleOverlay(element) {
+            element.classList.toggle('active');
+        }
         $(window).resize(function () {
             setCanvasHeight();
             createItem();
