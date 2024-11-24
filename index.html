@@ -58,6 +58,7 @@
             z-index: 1;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 80px;
         }
 
         .center-text {
@@ -179,64 +180,13 @@
             pointer-events: none;
         }
 
-        @media (max-width: 768px) {
-
-            .left-text,
-            .center-text {
-                left: 10px;
-                right: 10px;
-                transform: translateY(-50%);
-            }
-
-            .responsive-h1 {
-                font-family: Freeman, system-ui;
-                font-size: 8ch;
-                color: rgb(192, 65, 255);
-            }
-
-            .responsive-head1 {
-                font-family: Freeman, system-ui;
-                font-size: 2ch;
-                color: white;
-            }
-
-            .portfolio-item {
-                width: 100%;
-                height: auto;
-            }
-
-            .portfolio-item .overlay {
-                opacity: 0;
-                transition: all 0.5s ease;
-            }
-
-            .portfolio-item.active .overlay {
-                opacity: 1;
-            }
-
-            h1 {
-                font-size: 6rem;
-            }
-        }
-
-        .responsive-h1 {
-            font-family: Freeman, system-ui;
-            font-size: 10ch;
-            color: rgb(192, 65, 255);
-        }
-
-        .responsive-head1 {
-            font-family: Freeman, system-ui;
-            font-size: 3ch;
-            color: white;
-        }
-
-        @media (max-width: 480px) {
+        @media (max-width: 1000px) {
 
             .left-text,
             .center-text {
                 left: 5px;
                 right: 5px;
+                margin-top: 80px;
             }
 
             .responsive-h1 {
@@ -263,6 +213,139 @@
             .portfolio-item.active .overlay {
                 opacity: 1;
             }
+
+            .excolumn {
+                width: 85%;
+            }
+
+            .text {
+                font-size: 1.5ch;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .left-text,
+            .center-text {
+                left: 5px;
+                right: 5px;
+                margin-top: 80px;
+            }
+
+            .responsive-h1 {
+                font-family: Freeman, system-ui;
+                font-size: 5ch;
+                color: rgb(192, 65, 255);
+            }
+
+            .excolumn {
+                width: 85%;
+            }
+
+            .responsive-head1 {
+                font-family: Freeman, system-ui;
+                font-size: 2ch;
+                color: white;
+            }
+
+            .icons a {
+                margin: 0 5px;
+            }
+
+            .portfolio-item .overlay {
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+
+            .portfolio-item.active .overlay {
+                opacity: 1;
+            }
+
+            .text {
+                font-size: 1.5ch;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        .responsive-h1 {
+            font-family: Freeman, system-ui;
+            font-size: 10ch;
+            color: rgb(192, 65, 255);
+        }
+
+        .responsive-head1 {
+            font-family: Freeman, system-ui;
+            font-size: 3ch;
+            color: white;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .column {
+            width: 45%;
+        }
+
+        .excolumn {
+            width: 45%;
+        }
+
+        p {
+            margin: 5px 0;
+            font-family: system-ui;
+        }
+
+
+
+        @media (max-width: 480px) {
+
+            .left-text,
+            .center-text {
+                left: 5px;
+                right: 5px;
+                margin-top: 80px;
+            }
+
+            .excolumn {
+                width: 85%;
+            }
+
+            .responsive-h1 {
+                font-family: Freeman, system-ui;
+                font-size: 5ch;
+                color: rgb(192, 65, 255);
+            }
+
+            .responsive-head1 {
+                font-family: Freeman, system-ui;
+                font-size: 2ch;
+                color: white;
+            }
+
+            .icons a {
+                margin: 0 5px;
+            }
+
+            .portfolio-item .overlay {
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+
+            .portfolio-item.active .overlay {
+                opacity: 1;
+            }
+
             .text {
                 font-size: 1.5ch;
             }
@@ -296,9 +379,80 @@
         </div>
     </div>
     <div class="center-text">
+        <h1 style="font-family: Freeman, system-ui; font-size:5ch; color:rgb(192, 65, 255);">Education</h1>
+        <hr style="background-color: rgb(192, 65, 255); width: 50%; height: 2px;">
+        <div class="content-container">
+            <div class="column">
+                <p><strong>Major:</strong> Computer Science</p>
+                <p><strong>Concentration:</strong> Software Systems & Networking</p>
+                <p><strong>GPA:</strong> 3.88</p>
+            </div>
+            <div class="column">
+                <p><strong>School:</strong> UNC Charlotte</p>
+                <p><strong>Chancellor & Dean's List's </strong></p>
+            </div>
+        </div>
+        <div class="excolumn">
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 10px; color:white; margin-left:10px; margin-right:10px;">
+                <p><strong>Relevant Courses: </strong> Computer Systems, Calculus 3, Operating Systems, Data Structures
+                    and Algorithms, Database Design, Parallel Computing, Computer Networking</p>
+            </div>
+        </div>
+
+
         <h1 style="font-family: Freeman, system-ui; font-size:5ch; color:rgb(192, 65, 255);">Projects</h1>
         <hr style="background-color: rgb(192, 65, 255); width: 50%; height: 2px;">
         <div style="padding-top:2%" class="portfolio">
+            <h3 style="font-family: Reddit Sans, sans-serif; margin:0; color:white; padding-bottom:1%">Gain Tracker</h3>
+            <div style="padding-top: 1%;" class="icons">
+                <img src="static/SVG/python.svg" alt="python" />
+                <img src="static/SVG/flask.svg" alt="Flask" />
+                <img src="static/SVG/postgresql.svg" alt="postgresql" />
+                <img src="static/SVG/html5.svg" alt="HTML" />
+                <img src="static/SVG/css3.svg" alt="CSS" />
+                <img src="static/SVG/javascript_1.svg" alt="Javascript" />
+            </div>
+            <div class="portfolio-item" onclick="toggleOverlay(this)">
+                <img src="static/images/tracker.gif" alt="Project 1" height="387" width="800">
+                <div class="overlay">
+                    <div style="font-family: Freeman, system-ui;" class="text">
+                        Track your crypto portfolio<br><br>
+                        - Utilizes CoinMarketCap API to track real-time market data<br>
+                        - Build your portfolio and track gains/losses<br>
+                        - Database to keep user data<br><br>
+                        - This app is still in progress!
+                    </div>
+                </div>
+            </div>
+            <h3 style="font-family: Reddit Sans, sans-serif; margin:0; color:white; padding-bottom:1%">MAC's Tipsey
+                Creations</h3>
+            <div style="padding-top: 1%;" class="icons">
+                <img src="static/SVG/python.svg" alt="python" />
+                <img src="static/SVG/flask.svg" alt="Flask" />
+                <img src="static/SVG/postgresql.svg" alt="postgresql" />
+                <img src="static/SVG/html5.svg" alt="HTML" />
+                <img src="static/SVG/css3.svg" alt="CSS" />
+                <img src="static/SVG/javascript_1.svg" alt="Javascript" />
+                <img src="static/SVG/aws.svg" alt="AWS" />
+            </div>
+            <div class="portfolio-item" onclick="toggleOverlay(this)">
+                <img src="static/images/Codycakes.png" alt="Project 1" height="387" width="800">
+                <div class="overlay">
+                    <div style="font-family: Freeman, system-ui;" class="text">
+                        Built a web app for a client with an online cake buisiness<br><br>
+                        - The client could create new cake listings, upload images, set price/quantity<br>
+                        - Track client orders<br>
+                        - Uses a database to store all the user data<br>
+                        - Used mailtrap API for account resets/automated emails<br><br>
+                        <h3>Client never ended up using the app I built but the github it linked below</h3>
+                    </div>
+                    <div style="padding-top: 1%;" class="icons">
+                        <a href="https://github.com/thekendalia/cody-cakes" target="_blank"><i
+                                class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
             <h3 style="font-family: Reddit Sans, sans-serif; margin:0; color:white; padding-bottom:1%">Clash of Clans
                 Custom
                 Clan Website</h3>
@@ -322,7 +476,8 @@
                         - Uses Clash of Clans API to track and display clan data like clan member count, warlog... etc
                     </div>
                     <div style="padding-top: 1%;" class="icons">
-                        <a href="https://github.com/thekendalia/Clash-of-Clans-custom-website" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://github.com/thekendalia/Clash-of-Clans-custom-website" target="_blank"><i
+                                class="fa fa-github"></i></a>
                         <a href="https://darkroseclan.com/" target="_blank"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
@@ -348,7 +503,7 @@
                         - Google Oauth Login, along with in-app login available<br>
                         - Includes OpenAI ChatGPT to answer course questions<br>
                         - Includes multiple CRUD features<br>
-                        - Build in a group collaboration</div>
+                        - Built in a group collaboration</div>
                     <div style="padding-top: 1%;" class="icons">
                         <a href="https://github.com/lnalewaja/RateMyCourse" target="_blank"><i
                                 class="fa fa-github"></i></a>
